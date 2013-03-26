@@ -16,3 +16,16 @@
 (dolist (p my-packages)
   (when (not (package-installed-p p))
     (package-install p)))
+
+;; Load customizing files
+(defvar emacs-dir (file-name-directory load-file-name)
+  "top level emacs dir")
+(defvar module-dir (concat emacs-dir "modules/")
+  "My emacs configuration")
+
+;; Add to load path
+(add-to-list 'load-path module-dir)
+
+;; Require packages in modules/
+(mapc 'load (directory-files module-dir nil "^[^#].*el$"))
+(server-start)
