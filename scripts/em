@@ -1,0 +1,3 @@
+#!/bin/sh
+# Put this script in the PATH (~/bin or /usr/local/bin) to start emacs with gui in command line.
+/Applications/Emacs.app/Contents/MacOS/Emacs "$@"
