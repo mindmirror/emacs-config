@@ -1,6 +1,8 @@
 (require 'package)
 (add-to-list 'package-archives
-	     '("marmalade" . "http://marmalade-repo.org/packages/") t)
+             '("marmalade" . "http://marmalade-repo.org/packages/") t)
+(add-to-list 'package-archives
+             '("melpa" . "http://melpa.milkbox.net/packages/") t)
 (package-initialize)
 
 (when (not package-archive-contents)
@@ -8,9 +10,9 @@
 
 ;; Add package list here
 (defvar my-packages '(clojure-mode
-		      paredit
-		      nrepl
-		      magit)
+                      paredit
+                      nrepl
+                      magit)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
