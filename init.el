@@ -9,7 +9,8 @@
   (package-refresh-contents))
 
 ;; Add package list here
-(defvar my-packages '(clojure-mode
+(defvar my-packages '(evil
+                      clojure-mode
                       paredit
                       nrepl
                       magit)
