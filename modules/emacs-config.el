@@ -214,7 +214,7 @@
         (background-color . "Black")
         (cursor-color     . "DeepSkyBlue")
         (width            . 120)
-        (height           . 82)
+        (height           . 40)
         (font             . "-apple-consolas-medium-r-normal--14-*-*-*-m-*-iso10646-1")))
 
 ;; Darth Vada style mode line
