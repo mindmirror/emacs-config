@@ -107,9 +107,9 @@
       version-control t)                      ; use version contro backup
 
 ;; Use session
-(add-to-list 'load-path "~/.emacs.d/site-lisp/session/")
-(require 'session)
-(add-hook 'after-init-hook 'session-initialize)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/session/")
+;(require 'session)
+;(add-hook 'after-init-hook 'session-initialize)
 
 ;; Use ibuffer
 (global-set-key (kbd "C-x C-b") 'ibuffer)
@@ -158,17 +158,17 @@
             (global-set-key "\M-x" 'ido-execute-command)))
 
 ;; Use second-sel, this must be put before browse-kill-ring
-(add-to-list 'load-path "~/.emacs.d/site-lisp/second-sel/")
-(require 'second-sel)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/second-sel/")
+;(require 'second-sel)
 ;;(global-set-key [(control meta ?y)] 'secondary-dwim)
 
 ;; Use browse-kill-ring
-(add-to-list 'load-path "~/.emacs.d/site-lisp/browse-kill-ring/")
-(require 'browse-kill-ring)
-(browse-kill-ring-default-keybindings)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/browse-kill-ring/")
+;(require 'browse-kill-ring)
+;(browse-kill-ring-default-keybindings)
 
 ;; Use browse-kill-ring+
-(require 'browse-kill-ring+)
+;(require 'browse-kill-ring+)
 
 
 ;; Set default font
@@ -189,11 +189,11 @@
 (global-set-key [f9] 'menu-bar-mode)
 
 ;; Set highlight-symbol
-(add-to-list 'load-path "~/.emacs.d/elpa/highlight-symbol-1.1")
-(require 'highlight-symbol)
-(global-set-key [f10] 'highlight-symbol-at-point)
-(global-set-key [f11] 'highlight-symbol-next)
-(global-set-key [f12] 'highlight-symbol-prev)
+;(add-to-list 'load-path "~/.emacs.d/elpa/highlight-symbol-1.1")
+;(require 'highlight-symbol)
+;(global-set-key [f10] 'highlight-symbol-at-point)
+;(global-set-key [f11] 'highlight-symbol-next)
+;(global-set-key [f12] 'highlight-symbol-prev)
 
 ;; Let dired copy and delete directories recursively
 (setq dired-recursive-copies 'top)
@@ -203,8 +203,8 @@
 (setq frame-title-format '("" "[%b@%f] - Emacs " emacs-version))
 
 ;; Color theme
-(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme/")
-(require 'color-theme)
+;(add-to-list 'load-path "~/.emacs.d/site-lisp/color-theme/")
+;(require 'color-theme)
 ;;(color-theme-initialize)
 ;;(color-theme-tangotango)
 
