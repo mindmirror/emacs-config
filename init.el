@@ -31,4 +31,5 @@
 
 ;; Require packages in modules/
 (mapc 'load (directory-files module-dir nil "^[^#].*el$"))
-(server-start)
+(load "server")
+(unless (server-running-p) (server-start))

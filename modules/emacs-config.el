@@ -62,13 +62,14 @@
 (setq line-number-mode t)
 
 ;; Turn tool bar off
-(tool-bar-mode -1)
+(when (display-graphic-p)
+  (tool-bar-mode -1))
 
 ;; Turn menu bar off
 (if (not (eq system-type 'darwin))
     (menu-bar-mode -1))
 ;; Turn scroll bar off
-(scroll-bar-mode nil)
+;(scroll-bar-mode nil)
 
 ;; Blink cursor
 (blink-cursor-mode t)
@@ -207,24 +208,25 @@
 ;(require 'color-theme)
 ;;(color-theme-initialize)
 ;;(color-theme-tangotango)
+(load-theme 'tangotango t)
 
 ;; Set default frame
-(setq default-frame-alist
-      '((foreground-color . "Wheat")
-        (background-color . "Black")
-        (cursor-color     . "DeepSkyBlue")
-        (width            . 120)
-        (height           . 40)
-        (font             . "-apple-consolas-medium-r-normal--14-*-*-*-m-*-iso10646-1")))
+;(setq default-frame-alist
+;      '((foreground-color . "Wheat")
+;        (background-color . "Black")
+;        (cursor-color     . "DeepSkyBlue")
+;        (width            . 120)
+;        (height           . 40)
+;        (font             . "-apple-consolas-medium-r-normal--14-*-*-*-m-*-iso10646-1")))
 
 ;; Darth Vada style mode line
-(custom-set-faces
- '(mode-line
-   ((((class color) (min-colors 88))
-     (:background "DarkRed"
-      :foreground "White"
-      :box (:line-width -1
-            :style released-button))))))
+;(custom-set-faces
+; '(mode-line
+;   ((((class color) (min-colors 88))
+;     (:background "DarkRed"
+;      :foreground "White"
+;      :box (:line-width -1
+;            :style released-button))))))
 
 ;; Set WhiteSpace
 (require 'whitespace)
