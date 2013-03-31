@@ -1,0 +1,5 @@
+(:name purple-haze-theme
+    :description "My customized purple haze theme."
+    :type github
+    :pkgname mindmirror/emacs-purple-haze-theme
+    :website: "https://github.com/mindmirror/emacs-purple-haze-theme")
