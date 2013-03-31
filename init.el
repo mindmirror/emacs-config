@@ -25,24 +25,29 @@
   (when (not (package-installed-p p))
     (package-install p)))
 
+
 ;; Set up el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
-(setq el-get-user-package-directory "~/.emacs.d/el-get-recipes/")
 
-(unless (require 'el-get nil 'noerror)
+(unless (require 'el-get nil t)
   (with-current-buffer
       (url-retrieve-synchronously
        "https://raw.github.com/dimitri/el-get/master/el-get-install.el")
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+(add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-recipes")
 (el-get 'sync)
+
+(add-to-list 'custom-theme-load-path (concat el-get-dir "/purple-haze-theme"))
+
 
 ;; Load customizing files
 (defvar emacs-dir (file-name-directory load-file-name)
   "top level emacs dir")
 (defvar module-dir (concat emacs-dir "modules/")
   "My emacs configuration")
+
 
 ;; Add to load path
 (add-to-list 'load-path module-dir)
