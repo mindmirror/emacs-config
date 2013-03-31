@@ -14,6 +14,10 @@
                       paredit
                       nrepl
                       magit
+                      nlinum
+                      undo-tree
+                      rainbow-mode
+                      rainbow-delimiters
                       color-theme-sanityinc-tomorrow)
   "A list of packages to ensure are installed at launch.")
 
