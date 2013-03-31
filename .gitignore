@@ -1,7 +1,9 @@
 *~
 \#*
-*elc
-elpa
 .DS_Store
+*elc
+el-get
+elpa
+url
 auto-save-list
 recentf
