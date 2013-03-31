@@ -27,6 +27,7 @@
 
 ;; Set up el-get
 (add-to-list 'load-path "~/.emacs.d/el-get/el-get")
+(setq el-get-user-package-directory "~/.emacs.d/el-get-recipes/")
 
 (unless (require 'el-get nil 'noerror)
   (with-current-buffer
