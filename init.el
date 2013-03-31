@@ -13,7 +13,8 @@
                       clojure-mode
                       paredit
                       nrepl
-                      magit)
+                      magit
+                      color-theme-sanityinc-tomorrow)
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
