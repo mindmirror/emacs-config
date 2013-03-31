@@ -171,7 +171,6 @@
 ;; Use browse-kill-ring+
 ;(require 'browse-kill-ring+)
 
-
 ;; Set default font
 (set-frame-font "-apple-consolas-medium-r-normal--14-*-*-*-m-*-iso10646-1")
 
@@ -208,7 +207,9 @@
 ;(require 'color-theme)
 ;;(color-theme-initialize)
 ;;(color-theme-tangotango)
-(load-theme 'tangotango t)
+(if (display-graphic-p)
+    (load-theme 'purple-haze t)
+  (load-theme 'sanityinc-tomorrow-night t))
 
 ;; Set default frame
 ;(setq default-frame-alist
