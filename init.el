@@ -36,8 +36,11 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
+;; Set up my own el-get packages
 (add-to-list 'el-get-recipe-path "~/.emacs.d/el-get-recipes")
-(el-get 'sync)
+(setq my-el-get-packages
+      '(purple-haze-theme))
+(el-get 'sync my-el-get-packages)
 
 (add-to-list 'custom-theme-load-path (concat el-get-dir "/purple-haze-theme"))
 
