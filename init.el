@@ -42,9 +42,6 @@
     (goto-char (point-max))
     (eval-print-last-sexp)))
 
-(set-frame-parameter (selected-frame) 'alpha '(93 93))
-(add-to-list 'default-frame-alist '(alpha 93 93))
-
 ;; Load customizing files
 (defvar emacs-dir (file-name-directory load-file-name)
   "top level emacs dir")
