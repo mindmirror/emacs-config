@@ -81,6 +81,8 @@
 (setq display-time-24hr-format t)
 (setq display-time-day-and-date t)
 (display-time)
+(set-frame-parameter (selected-frame) 'alpha '(93 93))
+(add-to-list 'default-frame-alist '(alpha 93 93))
 
 ;; Use y-or-n-p
 (defalias 'yes-or-no-p 'y-or-n-p)
