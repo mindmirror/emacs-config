@@ -50,6 +50,8 @@
 
 (add-to-list 'custom-theme-load-path (concat el-get-dir "/purple-haze-theme"))
 
+(set-frame-parameter (selected-frame) 'alpha '(93 93))
+(add-to-list 'default-frame-alist '(alpha 93 93))
 
 ;; Load customizing files
 (defvar emacs-dir (file-name-directory load-file-name)
