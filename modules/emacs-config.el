@@ -77,10 +77,6 @@
 ;; Indicate buffer boundaries
 (setq default-indicate-buffer-boundaries 'left)
 
-;; Display time and date
-(setq display-time-24hr-format t)
-(setq display-time-day-and-date t)
-(display-time)
 (set-frame-parameter (selected-frame) 'alpha '(93 93))
 (add-to-list 'default-frame-alist '(alpha 93 93))
 
