@@ -9,16 +9,22 @@
   (package-refresh-contents))
 
 ;; Add package list here
-(defvar my-packages '(evil
-                      clojure-mode
-                      paredit
-                      nrepl
-                      magit
-                      nlinum
-                      undo-tree
-                      rainbow-mode
-                      rainbow-delimiters
-                      color-theme-sanityinc-tomorrow)
+(defvar my-packages
+  '(
+    ac-nrepl
+    auto-complete
+    clojure-mode
+    color-theme-sanityinc-tomorrow
+    evil
+    magit
+    nlinum
+    nrepl
+    paredit
+    popup
+    rainbow-delimiters
+    rainbow-mode
+    undo-tree
+    )
   "A list of packages to ensure are installed at launch.")
 
 (dolist (p my-packages)
