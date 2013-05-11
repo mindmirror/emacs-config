@@ -206,6 +206,7 @@
 ;;(color-theme-initialize)
 ;;(color-theme-tangotango)
 (load-theme 'sanityinc-tomorrow-night t)
+(set-cursor-color "orange")
 
 ;; Set default frame
 ;(setq default-frame-alist
