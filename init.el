@@ -1,3 +1,8 @@
+;;; This file bootstraps the configuration, which is divided into
+;;; a number of other files.
+
+(add-to-list 'load-path user-emacs-directory)
+
 (require 'package)
 (add-to-list 'package-archives
              '("marmalade" . "http://marmalade-repo.org/packages/") t)
@@ -43,16 +48,14 @@
     (eval-print-last-sexp)))
 
 ;; Load customizing files
-(defvar emacs-dir (file-name-directory load-file-name)
-  "top level emacs dir")
-(defvar module-dir (concat emacs-dir "modules/")
+(defvar init-dir (concat user-emacs-directory "init.d/")
   "My emacs configuration")
 
-
 ;; Add to load path
-(add-to-list 'load-path module-dir)
+(add-to-list 'load-path init-dir)
 
 ;; Require packages in modules/
-(mapc 'load (directory-files module-dir nil "^[^#].*el$"))
+(mapc 'load (directory-files init-dir nil "^[^#].*el$"))
 (load "server")
 (unless (server-running-p) (server-start))
+
