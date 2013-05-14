@@ -232,3 +232,8 @@
       '(tabs tab-mark trailing))
 (global-set-key (kbd "\C-c w") 'whitespace-mode)
 (global-set-key (kbd "\C-c \C-w") 'whitespace-mode)
+
+;; Powerline
+(add-to-list 'load-path (concat user-emacs-directory "site-lisp/powerline"))
+(require 'powerline)
+(powerline-default-theme)
