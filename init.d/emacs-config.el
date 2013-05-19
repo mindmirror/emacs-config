@@ -234,6 +234,7 @@
 (global-set-key (kbd "\C-c \C-w") 'whitespace-mode)
 
 ;; Powerline
-(add-to-list 'load-path (concat user-emacs-directory "site-lisp/powerline"))
-(require 'powerline)
-(powerline-default-theme)
+;(add-to-list 'load-path (concat user-emacs-directory "site-lisp/powerline"))
+;(require 'powerline)
+;(powerline-default-theme)
+
