@@ -1,0 +1,3 @@
+[submodule "site-lisp/emacs-powerline"]
+	path = site-lisp/emacs-powerline
+	url = https://github.com/jonathanchu/emacs-powerline.git
