@@ -58,4 +58,3 @@
 (mapc 'load (directory-files init-dir nil "^[^#].*el$"))
 (load "server")
 (unless (server-running-p) (server-start))
-

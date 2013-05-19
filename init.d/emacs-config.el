@@ -238,3 +238,6 @@
 ;(require 'powerline)
 ;(powerline-default-theme)
 
+(custom-set-faces
+ '(mode-line ((t (:box nil))))
+ '(mode-line-inactive ((t (:inherit mode-line :box nil)))))
