@@ -1,7 +1,0 @@
-#!/bin/sh
-# 1. Make sure the latest emacsclient binary is in the PATH:
-#     ln -s /Applications/Emacs.app/Contents/MacOS/bin/emacsclient /usr/local/bin
-# 2. Put this script in the PATH (~/bin or /usr/local/bin):
-which osascript > /dev/null 2>&1 && osascript -e 'tell application "Emacs" to activate'
-emclt -c "$@"
-
