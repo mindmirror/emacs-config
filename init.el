@@ -1,7 +1,7 @@
 ;;; This file bootstraps the configuration, which is divided into
 ;;; a number of other files.
 
-(add-to-list 'load-path user-emacs-directory)
+;(add-to-list 'load-path user-emacs-directory)
 
 (require 'package)
 (add-to-list 'package-archives
@@ -16,14 +16,12 @@
 ;; Add package list here
 (defvar my-packages
   '(
-    ac-nrepl
     auto-complete
     clojure-mode
     color-theme-sanityinc-tomorrow
     evil
     magit
     nlinum
-    nrepl
     paredit
     popup
     rainbow-delimiters
