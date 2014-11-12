@@ -11,7 +11,8 @@
 ;;----------------------------------------------------------------------------
 ;; Bootstrap config
 ;;----------------------------------------------------------------------------
-(require 'init-utils)  ;; Some handy utils
+(require 'init-utils)     ;; Some handy utils
+(require 'init-exec-path) ;; Set up $PATH
 
 (add-hook 'after-init-hook
 	  (lambda ()
