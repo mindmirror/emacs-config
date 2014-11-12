@@ -14,6 +14,11 @@
 (require 'init-utils)     ;; Some handy utils
 (require 'init-exec-path) ;; Set up $PATH
 
+;;----------------------------------------------------------------------------
+;; Allow users to provide an optional "init-preload-local.el"
+;;----------------------------------------------------------------------------
+(require 'init-preload-local nil t)
+
 (add-hook 'after-init-hook
 	  (lambda ()
 	    (message "init completed in %.2fms"
