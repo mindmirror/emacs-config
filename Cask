@@ -33,4 +33,5 @@
 (depends-on "smex")
 (depends-on "use-package")
 (depends-on "web-mode")
+(depends-on "wgrep")
 (depends-on "yasnippet")
