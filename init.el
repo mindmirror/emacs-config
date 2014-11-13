@@ -27,6 +27,7 @@
 
 (require 'wgrep)
 (require 'diminish)
+(require 'command-log-mode)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient

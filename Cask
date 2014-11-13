@@ -5,6 +5,7 @@
 
 (depends-on "bind-key")
 (depends-on "cask")
+(depends-on "command-log-mode")
 (depends-on "dash")
 (depends-on "diminish")
 (depends-on "drag-stuff")
