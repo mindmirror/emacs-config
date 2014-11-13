@@ -6,7 +6,7 @@
 (depends-on "bind-key")
 (depends-on "cask")
 (depends-on "dash")
-(depends-on "diminish")
+(depends-on "delight" :git "https://github.com/antonio/delight.el")
 (depends-on "drag-stuff")
 (depends-on "epl")
 (depends-on "exec-path-from-shell")
