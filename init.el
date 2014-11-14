@@ -29,6 +29,8 @@
 (require 'diminish)
 (require 'command-log-mode)
 
+(require 'init-frame-hooks)
+
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
 ;;----------------------------------------------------------------------------
