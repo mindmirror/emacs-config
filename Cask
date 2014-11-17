@@ -32,6 +32,7 @@
 (depends-on "shut-up")
 (depends-on "smartparens")
 (depends-on "smex")
+(depends-on "spacegray-theme")
 (depends-on "use-package")
 (depends-on "web-mode")
 (depends-on "wgrep")

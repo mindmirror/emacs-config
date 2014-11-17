@@ -30,6 +30,7 @@
 (require 'command-log-mode)
 
 (require 'init-frame-hooks)
+(require 'init-themes)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
