@@ -33,6 +33,7 @@
 (require 'init-themes)
 (require 'init-osx-keys)
 (require 'init-gui-frames)
+(require 'init-evil)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
