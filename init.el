@@ -32,6 +32,7 @@
 (require 'init-frame-hooks)
 (require 'init-themes)
 (require 'init-osx-keys)
+(require 'init-gui-frames)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
