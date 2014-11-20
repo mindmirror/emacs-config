@@ -34,6 +34,9 @@
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-evil)
+(require 'init-dired)
+
+;(require 'init-editing-utils)
 
 ;;----------------------------------------------------------------------------
 ;; Allow access from emacsclient
