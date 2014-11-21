@@ -23,6 +23,7 @@
 (depends-on "git-commit-mode")
 (depends-on "git-rebase-mode")
 (depends-on "goto-chg")
+(depends-on "guide-key")
 (depends-on "highlight-symbol")
 (depends-on "htmlize")
 (depends-on "idle-highlight-mode")
