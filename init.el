@@ -34,6 +34,7 @@
 (require 'init-osx-keys)
 (require 'init-gui-frames)
 (require 'init-evil)
+(require 'init-guide-key)
 (require 'init-dired)
 
 ;(require 'init-editing-utils)
