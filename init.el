@@ -36,6 +36,7 @@
 (require 'init-evil)
 (require 'init-guide-key)
 (require 'init-dired)
+(require 'init-isearch)
 
 ;(require 'init-editing-utils)
 

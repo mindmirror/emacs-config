@@ -3,6 +3,7 @@
 (source melpa)
 (source org)
 
+(depends-on "anzu")
 (depends-on "bind-key")
 (depends-on "browse-kill-ring")
 (depends-on "cask")
