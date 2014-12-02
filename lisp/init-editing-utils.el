@@ -26,3 +26,5 @@
  truncate-lines nil
  truncate-partial-width-windows nil
  visible-bell t)
+
+(provide 'init-editing-utils)
