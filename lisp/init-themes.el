@@ -1,4 +1,5 @@
-(load-theme 'spacegray t)
+(load-theme 'flatland t)
+;(load-theme 'spacegray t)
 
 ;;------------------------------------------------------------------------------
 ;; New-style theme support, in which per-frame theming is not possible
