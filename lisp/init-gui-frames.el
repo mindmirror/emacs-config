@@ -21,7 +21,9 @@
 ;;----------------------------------------------------------------------------
 ;; Show a marker in the left fringe for lines not in the buffer
 ;;----------------------------------------------------------------------------
-(setq indicate-empty-lines t)
+(setq-default indicate-empty-lines t)
+(when (not indicate-empty-lines)
+  toggle-indicate-empty-lines)
 
 
 ;;----------------------------------------------------------------------------
