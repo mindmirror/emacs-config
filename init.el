@@ -78,7 +78,7 @@
 ;(require 'init-sql)
 
 ;; Lispy
-;(require 'init-paredit)
+(require 'init-paredit)
 ;(require 'init-lisp)
 ;(require 'init-slime)
 ;(require 'init-clojure)
