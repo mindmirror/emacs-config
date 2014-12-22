@@ -42,6 +42,7 @@
 (depends-on "popwin")
 (depends-on "prodigy")
 (depends-on "projectile")
+(depends-on "rainbow-delimiters")
 (depends-on "s")
 (depends-on "shut-up")
 (depends-on "smartparens")
